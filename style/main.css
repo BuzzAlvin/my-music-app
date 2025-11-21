@@ -1,9 +1,9 @@
+/* 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html,body {
     font-family: 'Poppins', 'Montserrat', sans-serif;
     background: linear-gradient(135deg, #c41a1a, #111180, #a2a2d6);
@@ -22,7 +22,7 @@ html,body {
     width: 100%;
     max-width: 480px;
     margin: 0 auto;
-}
+} */
 
 .now-playing {
     margin-top: 2.5rem;

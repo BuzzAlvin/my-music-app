@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+
+    :root {
+        --font-ui: 'Poppins', sans-serif;
+        --font-display: 'Oswald', sans-serif;
+        --background:
+    }
+
+    .active {
+        color: #1DB954 !important;
+    }
+
+
+    .marquee-wrapper {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+    }
+
+    .marquee {
+        display: inline;
+        padding-left: 100%;
+        animation: scroll-left 15s linear infinite;
+    }
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+}
+
+@layer utilities {
+    .page-fade-in {
+    animation: fadeIn 0.35s ease-out forwards;
+
+}
+
+.page-slide-out {
+    animation: slideOut 0.30s ease-out forwards;
+}
+}
+
+@theme {
+  --color-bg-gradient: linear-gradient(to bottom, #000000, #994040);
+}
