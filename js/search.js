@@ -19,7 +19,7 @@ searchBtn.addEventListener('click', async () => {
         
         searchSongs(query);
     }, 500);
-    
+
     });
 
     async function searchSongs(query) {
@@ -62,7 +62,7 @@ searchBtn.addEventListener('click', async () => {
             div.addEventListener('click', () =>{
                 localStorage.setItem("startIndex", index);
                 localStorage.setItem("autoplay", "true");
-                window.location.href = "index.html"; 
+                window.location.href = "player.html"; 
             });
 
             searchResult.appendChild(div);

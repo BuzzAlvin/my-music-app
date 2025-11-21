@@ -50,7 +50,7 @@ async function loadTrendingSongs() {
             div.addEventListener('click', () => {
                 localStorage.setItem("startIndex", index);
                 localStorage.setItem("autoplay", "true");
-                window.location.href = "index.html";
+                window.location.href = "player.html";
             });
 
             popularSongList.appendChild(div);
@@ -91,7 +91,7 @@ async function loadPlaylistSongs() {
             div.addEventListener('click', () => {
                 localStorage.setItem("startIndex", index);
                 localStorage.setItem("autoplay", "true");
-                window.location.href = "index.html";
+                window.location.href = "player.html";
             });
 
             playlistSongList.appendChild(div)
@@ -133,7 +133,7 @@ async function loadNewCollection() {
              div.addEventListener('click', () => {
                 localStorage.setItem("startIndex", index);
                 localStorage.setItem("autoplay", "true");
-                window.location.href = "index.html";
+                window.location.href = "player.html";
             });
 
                 newCollectionList.appendChild(div);
