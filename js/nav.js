@@ -47,10 +47,10 @@ function switchPageEffect(page) {
 if (navSearchBtn) navSearchBtn.addEventListener('click', () => switchPageEffect('search.html'));
 
 
-if (navHomeBtn) navHomeBtn.addEventListener('click', () => switchPageEffect('home.html'));
+if (navHomeBtn) navHomeBtn.addEventListener('click', () => switchPageEffect('index.html'));
 
 
-if (navPlayBtn) navPlayBtn.addEventListener('click', () => switchPageEffect('index.html'));
+if (navPlayBtn) navPlayBtn.addEventListener('click', () => switchPageEffect('player.html'));
 
 
 //BACK BTN ON MUSIC PLAYER
@@ -59,7 +59,7 @@ musicBackBtn.addEventListener('click', () => {
 
     localStorage.setItem('selectedNav', 'home-button');
     //Redirect to home.
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
     });
 
 }

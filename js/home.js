@@ -39,12 +39,12 @@ async function loadTrendingSongs() {
         songs.forEach((song, index) => {
             const div = document.createElement("div");
 
-            div.className = "cursor-pointer snap-center flex-shrink-0 w-[180px] border border-black rounded-xl";
+            div.className = "cursor-pointer snap-start flex-shrink-0 w-[180px] border border-black rounded-xl";
             
             div.innerHTML = `
-                <img src=${song.img} class="song-image rounded-xl mb-2">
-                <h3 class="song-title text-md pl-1 font-semibold">${song.title}</h3>
-                <p class="artist-name text-sm pb-1 pl-1">${song.artist}</p>
+                <img src=${song.img} alt="song cover" class="song-image w-full rounded-lg">
+                <p class="song-title mt-2 text-sm text-white font-poppins pl-1">${song.title}</p>
+                <p class="artist-name text-xs text-gray-400 pl-1">${song.artist}</p>
             `;
 
             div.addEventListener('click', () => {
@@ -83,9 +83,9 @@ async function loadPlaylistSongs() {
             const div = document.createElement("div");
             div.className = "snap-center shrink-0 w-[180px] border border-black rounded-xl";
             div.innerHTML = `
-                <img src=${song.img} class="song-image rounded-xl mb-2">
-                <h3 class="song-title text-md pl-1 font-semibold">${song.title}</h3>
-                <p class="artist-name text-sm pb-1 pl-1">${song.artist}</p>
+                <img src=${song.img} alt="song cover" class="song-image w-full rounded-lg">
+                <p class="song-title mt-2 text-sm text-white font-poppins pl-1">${song.title}</p>
+                <p class="artist-name text-xs text-gray-400 pl-1">${song.artist}</p>
             `;
 
             div.addEventListener('click', () => {
@@ -122,12 +122,12 @@ async function loadNewCollection() {
         songs.forEach((song, index) => {
             const div = document.createElement("div");
 
-                div.className = "cursor-pointer snap-center shrink-0 w-[300px] h-[200px] rounded-xl";
+                div.className = "cursor-pointer snap-start shrink-0 w-[370px] h-[280px] rounded-xl overflow-hidden";
 
                 div.innerHTML = `
-                <img src=${song.img} class="song-image rounded-xl mb-2">
-                <h3 class="song-title text-md pl-1 font-semibold">${song.title}</h3>
-                <p class="artist-name text-sm pb-1 pl-1">${song.artist}</p>
+                <img src=${song.img} class="song-image w-full h-full object-cover rounded-xl mb-2">
+                <h3 class="song-title text-sn pl-1 font-semibold">${song.title}</h3>
+                <p class="artist-name text-xs pb-1 pl-1">${song.artist}</p>
                 `;
             
              div.addEventListener('click', () => {
