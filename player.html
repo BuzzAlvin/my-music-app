@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-nMfaZkX7Ofd1qLtZ2o1E5Yb2KdhavvA6xEGV6XBrPl5pHCyZXwC6oUqK0r2rCgeIik9YmT4C9H0DqCl6YcI5xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="h-screen bg-linear-to-t from-[#000000] to-[#994040] duration-300">
-    <main class="font-poppins text-white py-2 px-4 h-screen flex flex-col justify-between">
+<body class="h-screen">
+<main class="font-poppins text-white py-2 px-4 h-dvh flex flex-col justify-between bg-linear-to-t from-[#000000] to-[#994040] duration-300">
         <div class="now-playing">
             <div class="music-source flex items-center justify-between py-3 mt-3">
                  <i id="back-arrow" class="fa-solid fa-chevron-down cursor-pointer"></i>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="timer-container flex flex-col py-2 mt-6">
-                <input type="range" class="progress-bar w-full h-1" value="0" min="0" max="100">
+                <input type="range" class="progress-bar w-full h-1 bg-green-500 border-0" value="0" min="0" max="100">
                 <div class="flex flex-row justify-between">
                     <span class="current-time mt-2 text-sm"></span>
                     <span class="total-duration mt-1 text-sm"></span>
