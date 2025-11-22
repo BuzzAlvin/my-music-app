@@ -22,6 +22,16 @@ const audio = new Audio();
 
 const selectedSong = JSON.parse(localStorage.getItem('selectedSong'));
 
+function setVH() {
+    document.documentElement.style.setProperty(
+        '--vh',
+        `${window.innerHeight}px`
+        );
+    }
+window.addEventListener('resize', setVH);
+setVH();
+        
+
 if(selectedSong) {
     const { title, user, stream_url, artwork } = selectedSong;
     trackTitle.textContent = title || 'Unknown Title';
