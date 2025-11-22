@@ -4,7 +4,10 @@
     :root {
         --font-ui: 'Poppins', sans-serif;
         --font-display: 'Oswald', sans-serif;
-        --background:
+        --vh: 100vh;
+    }
+    body, main {
+        height: calc(var(--vh));
     }
 
     .active {
