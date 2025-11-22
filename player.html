@@ -18,20 +18,20 @@
 <body class="h-screen">
     <main class="font-poppins text-white py-2 px-4 h-dvh flex flex-col justify-between min-h-screen max-h-screen overflow-hidden bg-linear-to-t from-[#000000] to-[#994040] duration-300">
         <div class="now-playing">
-            <div class="music-source flex items-center justify-between py-3 mt-3">
+            <div class="music-source flex items-center justify-between py-2 mt-1">
                  <i id="back-arrow" class="fa-solid fa-chevron-down cursor-pointer"></i>
                  <h1 class="text-xl">Now Playing</h1>
                   <i class="fa-solid fa-list-ul cursor-pointer"></i>
             </div>
-            <div class="track-info flex flex-col items-center mt-3">
-                <img class="track-img mt-10 rounded-xl h-[300px]" src="" alt="track-img">
-                <div class="track-details flex flex-col pt-6 overflow-hidden marquee-wrapper">
+            <div class="track-info flex flex-col items-center mt-2">
+                <img class="track-img mt-2 rounded-xl h-[300px]" src="" alt="track-img">
+                <div class="track-details flex flex-col pt-4 overflow-hidden marquee-wrapper">
                     <h2 class="track-title text-lg marquee"></h2>
                     <h3 class="track-artist text-2xl font-bold whitespace-nowrap"></h3>
                 </div>
             </div>
 
-            <div class="reaction-tab flex flex-row gap-6  mt-5 overflow-x-auto snap-x snap-mandatory scroll-smooth cursor-pointer">
+            <div class="reaction-tab flex flex-row gap-6  mt-2 overflow-x-auto snap-x snap-mandatory scroll-smooth cursor-pointer">
                 <button class="react-btn text-2xl flex items-center text-center" id="love-btn"><i class="fa-regular fa-heart pr-1"></i><span></span></button>
                 <button class="react-btn text-2xl flex items-center text-center" id="message-btn"><i class="pr-1 fa-regular fa-message"></i><span></span></button>
                 <button class="react-btn text-2xl flex items-center text-center" id="save-btn"><i class="pr-1 fa-regular fa-bookmark"></i><span>save</span></button>
@@ -40,7 +40,7 @@
                 <button class="react-btn text-2xl flex items-center text-center" id="radio-btn"><i class="pr-1 fa-regular fa-wifi"></i><span>radio</span></button>
             </div>
 
-            <div class="timer-container flex flex-col py-2 mt-6">
+            <div class="timer-container flex flex-col py-2 mt-3">
                 <input type="range" class="progress-bar w-full h-1 bg-green-500 border-0" value="0" min="0" max="100">
                 <div class="flex flex-row justify-between">
                     <span class="current-time mt-2 text-sm"></span>
