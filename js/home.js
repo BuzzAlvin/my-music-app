@@ -42,7 +42,8 @@ async function loadTrendingSongs() {
             div.className = "cursor-pointer snap-start flex-shrink-0 w-[180px] border border-black rounded-xl";
             
             div.innerHTML = `
-                <img src=${song.img} alt="song cover" class="song-image w-full rounded-lg">
+                <img src=${song.img} alt="song cover" class="song-image w-full rounded-
+                onerror="this.onerror=null;this.src='./assets/img/adult-3086302_1280.jpg'">
                 <p class="song-title mt-2 text-sm text-white font-poppins pl-1">${song.title}</p>
                 <p class="artist-name text-xs text-gray-400 pl-1">${song.artist}</p>
             `;
