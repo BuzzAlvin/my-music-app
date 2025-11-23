@@ -70,7 +70,7 @@ async function loadPlaylistSongs() {
         songs = data.data.map(track => ({
             title: track.playlist_name ?? track.title,
             artist: track.user.name,
-            img: track.artwork?.['480x480'] ?? track.artwork?.['150x150'] ?? "./assets/img/adult-3086302_1280.jpg",
+            img: getArtwork(track.artwork),
             src: `https://discoveryprovider.audius.co/v1/tracks/${track.id}/stream?app_name=buzzalvin_music_app`
         }));
 
@@ -111,7 +111,7 @@ async function loadNewCollection() {
         songs = data.data.map(track => ({
             title: track.title,
             artist: track.user.name,
-            img: track.artwork?.['480x480'] || track.artwork?.['150x150'] || "./assets/img/adult-3086302_1280.jpg",
+            img: getArtwork(track.artwork),
             src: `https://discoveryprovider.audius.co/v1/tracks/${track.id}/stream?app_name=buzzalvin_music_app`
         }));
 
