@@ -5,6 +5,7 @@ The app allows users to explore trending music, search for tracks, and play song
 ---
 ## 🚀 Current Features
 🎶 Trending Music
+
    • Automatically fetches trending tracks using the Audius API.
 🔍 Search Functionality
    • Real-time search for songs and artists
