@@ -2,7 +2,7 @@ const popularSongList = document.getElementById("popular-list");
 const playlistSongList = document.getElementById("playlist-list");
 const newCollectionList = document.getElementById("new-collections");
 
-/* function getArtwork(artwork) {
+function getArtwork(artwork) {
   if (!artwork) return "./assets/img/adult-3086302_1280.jpg";
 
   const sizes = ["480x480", "2000x2000", "150x150"];
@@ -14,7 +14,7 @@ const newCollectionList = document.getElementById("new-collections");
   }
 
   return "./assets/img/adult-3086302_1280.jpg";
-} */
+} 
 
 //LOAD API
 async function loadTrendingSongs() {
@@ -27,7 +27,7 @@ async function loadTrendingSongs() {
         songs = data.data.map(track => ({
             title: track.title,
             artist: track.user.name,
-            img: track.artwork?.['480x480'] || track.artwork?.['150x150'] || "./assets/img/adult-3086302_1280.jpg",
+            img: getArtwork(track.artwork),
             src: `https://discoveryprovider.audius.co/v1/tracks/${track.id}/stream?app_name=buzzalvin_music_app`
         }));
 
