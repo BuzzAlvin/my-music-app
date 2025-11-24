@@ -6,24 +6,24 @@ The app allows users to explore trending music, search for tracks, and play song
 ## 🚀 Current Features
 🎶 Trending Music
 
-   • Automatically fetches trending tracks using the Audius API.
+   - Automatically fetches trending tracks using the Audius API.
 🔍 Search Functionality
-   • Real-time search for songs and artists
+   - Real-time search for songs and artists
 ⏯ Full Music Player
-   • Play / Pause
-   • Next / Previous
-   • Shuffle & Repeat
-   • Seekable progress bar
-   • Current time & duration
-   • Dynamic display of song title, artist, and artwork
+   - Play / Pause
+   - Next / Previous
+   - Shuffle & Repeat
+   - Seekable progress bar
+   - Current time & duration
+   - Dynamic display of song title, artist, and artwork
 🧩 Multi-Page Layout
-   • home.html – Trending songs
-   • search.html – Search UI
-   • musicplayer.html – Player page
+   - home.html – Trending songs
+   - search.html – Search UI
+   - musicplayer.html – Player page
 💾 LocalStorage Song Transfer
-   • Selected songs move from one page to another using localStorage.
+   - Selected songs move from one page to another using localStorage.
 📱 Responsive UI
-   • Optimized primarily for mobile screen sizes.
+   - Optimized primarily for mobile screen sizes.
 
 
 ---
@@ -38,17 +38,17 @@ GET /v1/tracks/trending
 📌 Search for tracks: 
 GET /v1/tracks/search?query=
 Retrieved data includes: 
-• Song title 
-• Artist 
-• Artwork URL 
-• Streaming URL
+- Song title 
+- Artist 
+- Artwork URL 
+- Streaming URL
 
 ---
 ## 🧠 How the App Works 
-• Home page loads trending songs via Audius API. 
-• Search page lets user search for any track. 
-• When a song is clicked, its metadata is saved to localStorage. 
-• Music Player page reads that data and plays the selected track with full controls.
+- Home page loads trending songs via Audius API. 
+- Search page lets user search for any track. 
+- When a song is clicked, its metadata is saved to localStorage. 
+- Music Player page reads that data and plays the selected track with full controls.
 
 ---
 ## 📌 How to Run
@@ -71,13 +71,13 @@ Retrieved data includes:
 
 ---
 ## 🚧 Next Steps
-• Playlist system
-• Recently played section
-• Dark mode
-• Better animations and transitions
-• Improved artwork handling
-• Waveform visualization
+- Playlist system
+- Recently played section
+- Dark mode
+- Better animations and transitions
+- Improved artwork handling
+- Waveform visualization
 
 ---
 ## 🏷️ Version
-• v1.0 
+- v1.0 
