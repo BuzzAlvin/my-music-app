@@ -3,12 +3,17 @@ const searchBtn = document.getElementById('search-btn');
 const searchResult = document.getElementById('searchResults');
 const homeSection = document.getElementById('home-section');
 const searchSection = document.getElementById('search-section');
+const searchForm = document.getElementById("searchForm");
 
 let searchSongsList = [];
 let typingTimeout;
 
-if (searchBtn) {
-searchBtn.addEventListener('click', async () => {
+
+    
+
+if (searchForm) {
+searchForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
     const query = searchInput.value.trim();
 
     clearTimeout(typingTimeout);
