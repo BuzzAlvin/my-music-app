@@ -54,7 +54,7 @@ searchBtn.addEventListener('click', async () => {
 
             div.classList = "track bg-gray-900 p-3 rounded-2xl cursor-pointer hover:bg-gray-800 transition";
             div.innerHTML = `
-                <img id="song-img" src=${song.img} class="rounded-xl w-full h-32 object-cover mb-2">
+                <img id="song-img" src=${song.img} onerror="this.onerror=null;this.src='./assets/img/adult-3086302_1280.jpg';"  class="rounded-xl w-full h-32 object-cover mb-2">
                 <h3 id="song-title" class="text-sm font-medium truncate">${song.title}</h3>
                 <p id="song-artist" class="text-xs text-gray-400 truncate">${song.artist}</p>
             `
