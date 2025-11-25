@@ -124,9 +124,8 @@ async function loadNewCollection() {
                 div.className = "cursor-pointer snap-start shrink-0 w-[370px] h-[280px] rounded-xl overflow-hidden";
 
                 div.innerHTML = `
-                <img src="${song.img}" alt="${song.title}" onerror="this.onerror=null;this.src='./assets/img/adult-3086302_1280.jpg';" class="song-image w-full object-cover rounded-xl mb-2">
-                <h3 class="song-title text-sn pl-1 font-semibold">${song.title}</h3>
-                <p class="artist-name text-xs pb-1 pl-1">${song.artist}</p>
+                <img src="${song.img}" alt="${song.title}" onerror="this.onerror=null;this.src='./assets/img/adult-3086302_1280.jpg';" class="song-image w-full h-[30px] object-cover rounded-xl mb-2">
+
                 `;
             
              div.addEventListener('click', () => {
