@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@keyframes slide-horizontal {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide-horizontal {
+  animation: slide-horizontal 8s ease-in-out infinite alternate;
+}
+
+.animate-slide-horizontal:hover {
+  animation-play-state: paused;
+}
