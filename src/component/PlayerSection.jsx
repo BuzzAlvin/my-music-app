@@ -180,7 +180,7 @@ export default function PlayerSection({
               </div>
             </div>
           ) : (
-            <h2 className="text-lg font-semibold">{title}</h2>
+            <h2 className="text-lg font-semibold">{song.title}</h2>
           )}
 
           {/* Artist */}
