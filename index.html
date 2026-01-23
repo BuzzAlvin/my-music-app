@@ -1,109 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <script async src="https://basicons.xyz/embed.js"> </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="dist/output.css">
-</head>
-<body id="home-section" class="bg-linear-to-t from-[#000000] to-[#994040] duration-300 min-h-screen flex flex-col flex-1">
-<main class="ml-8 pb-25 min-h-screen text-white">
-    <div class="flex justify-between items-center h-18 mb-10">
-            <div class="flex items-center justify-center text-white">
-                <h1 class="font-oswald font-bold text-2xl">Hello, <span class="font-medium italic font-poppins text-[18px]"> BuzzAlvin</span></h1>
-            </div>
-            
-            <div id="notification" class=" rounded-full flex items-center justify-center text-center ">
-                <button id="bell" class="w-14 h-12 rounded-full text-white transition-all duration-500 text-center cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
-</svg>
-
-</button>
-
-            </div>
-    </div>
-    <section>
-        <h2 class="font-poppins font-semibold text-2xl text-white capitalize mb-3">
-            select categories
-        </h2>  
-        <div class="categories-bar flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3">           
-                    <button id="all" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">all</button>
-                    <button id="partSongs" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">party</button>
-                    <button id="afroSongs" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">afrosongs</button>
-                    <button id="blues" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">blues</button>
-                    <button id="podcast" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">hip-hop</button>
-                    <button id="podcast" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">carribean</button>
-                    <button id="podcast" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">country</button>
-                    <button id="podcast" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">instrumental</button>
-                    <button id="podcast" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">rock</button>
-                    <button id="podcast" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">podcast</button>
-                    <button id="podcast" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start">electronic</button>
-                    <button id="latin" class="capitalize bg-black rounded-full shrink-0 px-3 py-1 text-sm text-white border categories duration-300 cursor-pointer snap-start mr-3">latin</button>
-        </div>
-    </section>
-
-    <section class="mt-6">
-        <h3 class="text-2xl font-semibold mb-4 capitalize font-poppins text-white">popular songs</h3>
-        <div id="popular-list" class="flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 ">
-        </div>
-    </section>
-
-    <section class="mt-6">
-        <h3 class="text-2xl font-semibold mb-4 capitalize font-poppins text-white">new collections</h3>
-        <div id="new-collections" class="flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 ">    
-        </div> 
-    </section>
-
-    <section class="mt-9">
-        <h3 class="text-2xl font-semibold mb-4 capitalize font-poppins text-white">playlists</h3>
-        <div id="playlist-list" class="flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 ">           
-        </div>
-    </section>  
-    <section id="footer" class=" fixed bottom-4 left-1/2 -translate-x-1/2 w-[95%] backdrop-blur-md shadow-xl rounded-full z-50">
-        <nav class="flex items-center justify-between bg-black/10 border-2 border-white/20 x-3 py-2 rounded-full">
-            <button id="home-button" class="flex items-center justify-center flex-col cursor-pointer transition-all duration-500 w-16 h-14 py-1 rounded-full nav-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-            </svg>
-            <span class="text-[10px]">home</span>
-            </button>
-            <button id="search-button" class="flex items-center justify-center flex-col cursor-pointer transition-all duration-500 w-16 h-14 py-1 rounded-full nav-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-            <span class="text-[10px]">search</span>
-            </button>
-            <button id="play-button" class="flex items-center justify-center flex-col cursor-pointer transition-all duration-500 w-16 h-14 py-1 rounded-full nav-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
-            </svg>
-            <span class="text-[10px]">play</span>
-            </button>
-            <button id="library-button" class="flex items-center justify-center flex-col cursor-pointer transition-all duration-500 w-16 h-14 py-1 rounded-full nav-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
-            </svg>
-            <span class="text-[10px]">library</span>
-            </button>
-            <button id="profile-button" class="flex items-center justify-center flex-col cursor-pointer transition-all duration-500 w-16 h-14 py-1 rounded-full nav-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-            </svg>
-            <span class="text-[10px]">profile</span>
-            </button>            
-        </nav>
-    </section>
-    <footer class="p-4 text-center text-xs text-gray-500">
-        Developed by <span class="text-purple-400">BuzzAlvin</span>
-    </footer>
-</main>
-
-    <script src="js/script.js" defer></script>
-    <script src="js/search.js" defer></script>
-    <script src="js/home.js" defer></script>
-    <script src="js/nav.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>music-app</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

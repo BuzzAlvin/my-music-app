@@ -1,83 +1,109 @@
 ## 🎵 Buzzalvin Music App
-A responsive, mobile-first music streaming web application built with HTML, Tailwind CSS v4, and JavaScript, powered by the Audius API.
-The app allows users to explore trending music, search for tracks, and play songs through a sleek custom player UI. 
+
+A modern music streaming web app built with **React** and **Tailwind CSS**, powered by the **Audius API**.
+This project is a refactor and upgrade of an earlier **HTML + Tailwind** implementation into a fully interactive React application.
 
 ---
+
 ## 🚀 Current Features
+
 🎶 Trending Music
 
-   - Automatically fetches trending tracks using the Audius API.
-🔍 Search Functionality
-   - Real-time search for songs and artists
-⏯ Full Music Player
-   - Play / Pause
-   - Next / Previous
-   - Shuffle & Repeat
-   - Seekable progress bar
-   - Current time & duration
-   - Dynamic display of song title, artist, and artwork
-🧩 Multi-Page Layout
-   - home.html – Trending songs
-   - search.html – Search UI
-   - musicplayer.html – Player page
-💾 LocalStorage Song Transfer
-   - Selected songs move from one page to another using localStorage.
-📱 Responsive UI
-   - Optimized primarily for mobile screen sizes.
+- 🎧 Play, pause, next & previous tracks
 
+- 🔀 Shuffle & repeat (off / all / one)
+
+- ⏭ Auto-play next track
+
+- 🔍 Search for songs & artists
+
+- 📂 Trending tracks, playlists & collections
+
+- ⏱ Live progress bar with duration tracking
+
+- 📱 Mobile-first responsive design
 
 ---
+
 ## 🛠 Tech Stack
-HTML • JavaScript • Tailwind CSS v4 • Audius API • LocalStorage • Git & GitHub
+
+- **React**(Hooks, state lifting, component architecture)
+
+- Tailwind CSS
+
+- Audius Public API
+
+- Lucide Icons
+
+- Local Storage
+
+- HTML5 Audio API
 
 ---
-## 🌐 Audius API Endpoints Used 
-📌 Trending tracks: 
-GET /v1/tracks/trending 
 
-📌 Search for tracks: 
-GET /v1/tracks/search?query=
-Retrieved data includes: 
-- Song title 
-- Artist 
-- Artwork URL 
-- Streaming URL
+## 🔄 Project Evolution
+
+This project was originally built using:
+
+- HTML
+
+- Tailwind CSS
+
+- Static UI components
+
+It has now been **refactored into React**, introducing:
+
+- Component-based architecture
+
+- Centralized audio control
+
+- Shared player state across pages
+
+- Dynamic routing between sections
+
+## 🧠 Key Concepts Used
+
+- State lifting (App.jsx controls the audio queue)
+
+- Controlled audio playback via useRef
+
+- Side effects with useEffect
+
+- UI logic separation (Home / Search / Player)
+
+- Data normalization from external APIs
 
 ---
-## 🧠 How the App Works 
-- Home page loads trending songs via Audius API. 
-- Search page lets user search for any track. 
-- When a song is clicked, its metadata is saved to localStorage. 
-- Music Player page reads that data and plays the selected track with full controls.
 
----
 ## 📌 How to Run
+
 1. Clone the repo:
-`git clone https://github.com/BuzzAlvin/buzzalvin-music-app.git`
+   `git clone https://github.com/BuzzAlvin/buzzalvin-music-app.git`
 
-2. Open `home.html` in your browser
-3. Test playback functionality
+2. cd buzzalvin-music-player
+3. npm install
+4. npm run dev
 
----
-## Screenshots
-**Home Page**
-![Home Page](assets/screenshots/homepage.PNG)
+## 🌐 API
 
-**Search Page**
-![Search Page](assets/screenshots/searchpage.PNG)
-
-**Music Player**
-![Music Player](assets/screenshots/playerpage.PNG)
+This app uses the **Audius Discovery API**
+https://audius.co
 
 ---
+
 ## 🚧 Next Steps
-- Playlist system
-- Recently played section
+
+- Playlist & Artist pages
+- Miniplayer
+- Lyrics integration
 - Dark mode
-- Better animations and transitions
-- Improved artwork handling
+- Local storage for recently played songs
 - Waveform visualization
 
 ---
+
+<!-- This project was migrated from a static HTML/Tailwind implementation to React to improve scalability, maintainability, and interactivity -->
+
 ## 🏷️ Version
-- v1.0 
+
+- v1.1
