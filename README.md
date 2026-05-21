@@ -5,6 +5,11 @@ This project is a refactor and upgrade of an earlier **HTML + Tailwind** impleme
 
 ---
 
+## 🔗 Live Link
+https://buzzalvin-music-app.pages.dev/
+
+---
+
 ## 🚀 Current Features
 
 🎶 Trending Music
